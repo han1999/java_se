@@ -20,7 +20,15 @@
  *      6,以上,就可以运行代码了
  *
  *  补做:
+ *      设置module
+ *      这个可以不做,不会影响代码运行,但是最好也设置一下
+ *      同样在project structure当中的Modules选项页
+ *      点击加号,然后import module
+ *      选择具体的课程的module,比如test/basic等等
+ *      然后直接下一步 下一步 完成添加
+ *      最后不要忘记修改src目录权限
  *
+ *     注意src目录的权限只能属于某一个module,不能同时属于两个,会报错!
  *
  */
 public class HelloWorld {
