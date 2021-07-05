@@ -12,7 +12,7 @@
  *          然后将project language level 设置为8
  *          project compiler output目录要设置出来:
  *          建议设置为
- *          当前目录/course-code/out
+ *          当前目录/out
  *      5,设置文件夹权限.查看其中Modules选项页:
  *          将src目录设置为蓝色的Sources权限
  *          其余不要乱动
