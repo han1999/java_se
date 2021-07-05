@@ -27,7 +27,7 @@ public class Work2 {
             taxable = salary - 2000;
             double taxRate = 0;//税率
             double deduction = 0;//速算扣除数
-            if (taxable < 500 | taxable == 500) {
+            if (taxable <= 500 ) {
                 taxRate = 0.05;
                 deduction = 0;
             } else if (taxable > 500 && (taxable <= 2000)) {
