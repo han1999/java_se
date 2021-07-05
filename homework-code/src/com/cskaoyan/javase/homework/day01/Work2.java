@@ -55,7 +55,6 @@ public class Work2 {
                 taxRate = 0.45;
                 deduction = 15375;
             }
-
             tax = taxable * taxRate - deduction;
             double salaryLeft;//到手工资
             salaryLeft = salary - tax;
@@ -63,9 +62,6 @@ public class Work2 {
             System.out.println("缴纳的个人所得税为：" + tax);
             System.out.println("实际到手工资为：" + salaryLeft);
 
-
-            //------------
-            //System.out.println(10*10%);
         }
     }
 }
