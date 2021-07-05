@@ -34,5 +34,32 @@
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("hello world!");
+        System.out.println("你好，中国！");
+        //xxxx
+        //Translation的快捷键CTRL + shift + Y
+
+        //快捷键
+        //alt + 回车
+        //ctrl + alt + L
+        int a = 12;
+        int b = 30;
+        System.out.println(a + b - 12);
+
+        //多行注释
+        /**
+         * 浮点数的表示方式：
+         * 1，符号位
+         * 2，阶码（指数位）
+         * 3，尾数（小数位）
+         * 因为浮点数的表示中存在指数位，所以浮点数可以表示特别大和特别小的数
+         * 任何浮点数包括float都比long类型表示范围大的多得多
+         *
+         * 浮点数的尾数可以看成是科学计数法中的有效数字，因为尾数的位数是有限的
+         * 所以浮点数的有效位数也是有限的
+         * 所以浮点数的表示具有精度问题
+         *
+         *
+         *
+         */
     }
 }
