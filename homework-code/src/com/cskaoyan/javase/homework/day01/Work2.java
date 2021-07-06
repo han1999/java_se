@@ -62,6 +62,11 @@ public class Work2 {
             System.out.println("缴纳的个人所得税为：" + tax);
             System.out.println("实际到手工资为：" + salaryLeft);
 
+
+            // 1000 * 10%
+            // %是取余运算，不是百分号
+            //System.out.println(1000 * 10 % -2);
+
         }
     }
 }
