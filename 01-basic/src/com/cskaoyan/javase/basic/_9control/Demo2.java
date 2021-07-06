@@ -11,6 +11,5 @@ public class Demo2 {
         int a = -10;
         if (a > 0) System.out.println("a是大于0的数");
         System.out.println("语句");
-
     }
 }
