@@ -21,10 +21,10 @@ public class Work2 {
         double salary = sc.nextDouble();//工资
         double taxable = 0;//应纳税所得额
         double tax = 0;//应纳税额
-        if (salary <= 2000) {
+        taxable = salary - 2000;
+        if (taxable <= 0) {
             System.out.println("不用缴税，到手工资为：" + salary);
         } else {
-            taxable = salary - 2000;
             double taxRate = 0;//税率
             double deduction = 0;//速算扣除数
             if (taxable <= 500) {
