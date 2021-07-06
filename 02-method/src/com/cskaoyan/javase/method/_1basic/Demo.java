@@ -1,4 +1,4 @@
-package com.cskaoyan.javase.method._2basic;
+package com.cskaoyan.javase.method._1basic;
 
 /**
  * @description: 方法的实参和形参数据类型的兼容问题
@@ -13,7 +13,6 @@ package com.cskaoyan.javase.method._2basic;
  * 思考:
  *      方法的返回值类型和方法体中的实际返回值的数据类型要求完全一致吗?
  *      不要求,同样和形参实参一样,只要求兼容,对于基本数据类型而言,可以发生类型的自动转换
- *
  *
  */
 public class Demo {
@@ -43,5 +42,10 @@ public class Demo {
 
     public static double test3(){
         return 1.0;
+        //System.out.println();
+    }
+
+    public static String test4(){
+        return "你好";
     }
 }
