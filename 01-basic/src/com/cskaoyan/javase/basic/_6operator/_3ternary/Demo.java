@@ -24,7 +24,7 @@ public class Demo {
         int b = (a > 0) ? 2 : 1;*/
 
         //需求: 求两个数的最大值
-        int a = 10;
+        int a = 100;
         int b = 20;
         int max = (a > b) ? a : b;
         System.out.println(max);
@@ -37,6 +37,14 @@ public class Demo {
         } else {
             System.out.println(b);
         }
+
+        //需求: 求三个数的最大值
+        int c = 30;
+        max = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
+        System.out.println(max);
+        //代码写的简洁是一件好事情,这样会显得优雅,水平很高
+        //但是过于简单的代码往往可读性就不好了
+        //所以这里面存在一个取舍
 
     }
 }
