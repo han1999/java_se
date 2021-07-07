@@ -26,6 +26,5 @@ public class MultiplicationTables {
             }
             System.out.println();
         }
-
     }
 }

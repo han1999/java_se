@@ -24,7 +24,7 @@ public class ForLoopDemo {
         System.out.println(result);*/
     }
 
-    public static void sumOddNum() {
+    public static int sumOddNum() {
         //求和之前，可以声明一个结果值，初始值为0
         int result = 0;
         for (int i = 1; i <= 100; i++) {
@@ -33,7 +33,10 @@ public class ForLoopDemo {
                 //求和
                 result += i;
             }
+            int a = 10;
+
         }
-        System.out.println(result);
+        //System.out.println(result);
+        return result;
     }
 }
