@@ -27,7 +27,6 @@ import java.util.Arrays;
  *      3,增强for还是foreach,它们都有个外号叫做"迭代器",它们是专门用来遍历查看一个容器的元素取值的,它是不能在遍历中修改元素的取值的
  *  综上,foreach是比较好的用来遍历查看数组元素取值的方式
  *
- *
  */
 public class Demo2 {
     public static void main(String[] args) {
