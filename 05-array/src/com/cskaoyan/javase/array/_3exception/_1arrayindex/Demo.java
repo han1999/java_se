@@ -13,8 +13,6 @@ package com.cskaoyan.javase.array._3exception._1arrayindex;
  *
  * 数组下标越界一般不会写出这个异常,都是在循环中,因为错判了循环变量的范围,导致了错误的下标
  *
- *
- *
  */
 public class Demo {
     public static void main(String[] args) {
@@ -26,7 +24,5 @@ public class Demo {
             System.out.println(arr[i]);
         }
         System.out.println("hello world");
-
-
     }
 }
