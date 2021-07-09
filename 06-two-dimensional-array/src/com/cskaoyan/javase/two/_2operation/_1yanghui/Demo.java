@@ -47,10 +47,10 @@ public class Demo {
         //于是开始给二维数组中的元素赋值
         //1，每一行的开头元素和结尾的元素都是1
         for (int i = 0; i < yangHui.length; i++) {
-            for (int j = 0; j < yangHui[i].length; j++) {
-                yangHui[i][0] = 1;
-                yangHui[i][yangHui[i].length - 1] = 1;
-            }
+            //for (int j = 0; j < yangHui[i].length; j++) {
+            yangHui[i][0] = 1;
+            yangHui[i][yangHui[i].length - 1] = 1;
+            //}
         }
         System.out.println(Arrays.deepToString(yangHui));
 
