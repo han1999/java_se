@@ -7,7 +7,9 @@ package com.cskaoyan.javase.homework.day04;
 
 public class VariableParameter {
     public static void main(String[] args) {
-        System.out.println(getMaxValue(1, 2, 3, 324, 45, 999,23424,242435,342435));
+        int[] arr = new int[3];
+        //System.out.println(getMaxValue(1, 2, 3, 324, 45, 999,23424,242435,342435));
+        System.out.println(getMaxValue(arr));
     }
 
     public static int getMaxValue(int... values){
