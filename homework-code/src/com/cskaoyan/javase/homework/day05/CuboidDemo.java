@@ -10,7 +10,6 @@ package com.cskaoyan.javase.homework.day05;
  * 必须要有一个对象才能去调用
  * 在成员方法中,是可以使用本对象的成员变量的
  *
- *
  */
 public class CuboidDemo {
     public static void main(String[] args) {
