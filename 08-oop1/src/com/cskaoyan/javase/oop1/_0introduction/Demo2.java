@@ -55,7 +55,12 @@ package com.cskaoyan.javase.oop1._0introduction;
  *  对象创建后,访问成员变量和方法的语法:
  *      (访问权限允许的情况下)直接用对象名点访问
  *
- *
+ * > 注意事项
+ * - **类可以嵌套定义叫做内部类**，但是现在不要这么做，一个Java文件中定义多个class应该并列而不是包含
+ * - 一个Java文件中的多个class是同包（文件夹）关系
+ * - 一个类当中，应该开门见山的定义成员变量，而后再写成员方法
+ * - 类中没有的属性和行为，对象是不可能有的，类是模板，模板中有才能创建出来
+ * - 使用new关键字就会创建新的对象，两条new语句创建的对象是完全独立的
  *
  */
 
@@ -70,11 +75,26 @@ public class Demo2 {
         System.out.println(s.name); //null
         s.sleep();
         s.study();
+        s.age = 18;
+        s.name = "张三";
+        System.out.println(s.age); //18
+        System.out.println(s.name); //张三
+
+        //com.cskaoyan.javase.oop1._0introduction.Student@1540e19d
+        //全限定类名+十六进制的地址值
+        System.out.println(s);
+
+        Student s2 = new Student();
+        System.out.println(s2);
+
+        //class B{}
 
     }
     //成员位置
     /*public static void test(){
     }*/
+
+    //class A{}
 }
 
 class Student {
@@ -93,5 +113,4 @@ class Student {
     public void study() {
         System.out.println("你是怎么睡得着的?");
     }
-
 }
