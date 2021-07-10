@@ -66,7 +66,6 @@ public class TwoDArrayDemo2 {
                 }
             }
             System.out.println((i + 1) + "班的最高分是：" + max);
-
         }
     }
 
@@ -81,7 +80,6 @@ public class TwoDArrayDemo2 {
                 }
             }
             System.out.println((i + 1) + "班的最低分是：" + min);
-
         }
     }
 }

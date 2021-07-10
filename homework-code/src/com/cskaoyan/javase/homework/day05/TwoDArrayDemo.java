@@ -50,6 +50,5 @@ public class TwoDArrayDemo {
             }
         }
         System.out.println("全年销售额是：" + sum);
-
     }
 }

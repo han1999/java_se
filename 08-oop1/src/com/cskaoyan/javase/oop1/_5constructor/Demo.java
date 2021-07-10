@@ -55,8 +55,16 @@ package com.cskaoyan.javase.oop1._5constructor;
  *      构造器赋值是永远的最后一步,只要是标准格式书写的构造器,那么得到对象的属性取值一定是构造器中传入的实参的取值
  *      我们称之为"永远可以相信的构造器"
  *
+ *      9,在一个构造器中，可以用this去调用别的构造器，这在很多时候可以简化代码
+ *      语法： this(参数)
+ *      根据参数的数据类型不同，决定调用的是哪个构造方法
+ *      注意事项：
+ *      this在调用构造方法时该条语句必须处在构造器的第一行（关于原因后面再讲）
  *
+ *      10，对于一个类的一次程序运行过程来说，类加载只有一次，但是创建对象的次数是不受限制，每次创建对象，都是执行一次构造方法
  *
+ *      11，构造方法之间构成的是方法的重载，就受方法重载语法限制
+ *      典型的形参名不同不能构成方法的重载
  *
  */
 public class Demo {
@@ -75,6 +83,7 @@ public class Demo {
         Teacher t2 = new Teacher();*/
 
         Teacher t = new Teacher("Java", 18);
+
         System.out.println(t.course);
         System.out.println(t.age);
 
@@ -85,6 +94,7 @@ class Teacher {
     //属性: 课程,年龄
     String course = "数学";
     int age = 48;
+    double salary; //工资
 
     //行为: 上课
     public void teach() {
@@ -116,5 +126,14 @@ class Teacher {
     public Teacher(String course, int age) {
         this.course = course;
         this.age = age;
+        System.out.println("Test");
+    }
+
+    public Teacher(String course, int age, double salary) {
+        //this调用双参Teacher构造方法
+        this(course, age);
+        this.salary = salary;
+        //Call to 'this()' must be first statement in constructor body
+        //this(course, age);
     }
 }
