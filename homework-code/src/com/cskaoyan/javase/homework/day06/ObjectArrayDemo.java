@@ -12,6 +12,7 @@ public class ObjectArrayDemo {
         JavaStudent s3 = new JavaStudent(3, "王二", "男", 48, 48);
         JavaStudent s4 = new JavaStudent(4, "麻子", "女", 30, 60);
         JavaStudent s5 = new JavaStudent(5, "蔡徐坤", "女", 18, 86);
+        //动态初始化创建一个JavaStudent对象数组
         JavaStudent[] js = new JavaStudent[5];
         js[0] = s1;
         js[1] = s2;
@@ -26,6 +27,9 @@ public class ObjectArrayDemo {
         }
         System.out.println("平均成绩是:" + (sum / 5));
 
+        for (JavaStudent j : js) {
+            j.print();
+        }
     }
 }
 
@@ -39,11 +43,15 @@ class JavaStudent {
     public JavaStudent() {
     }
 
-    public JavaStudent(int id, String name, String gender, int age, double java) {
+    public JavaStudent(int id, String name, String gender, int age) {
         this.id = id;
         this.name = name;
         this.gender = gender;
         this.age = age;
+    }
+
+    public JavaStudent(int id, String name, String gender, int age, double java) {
+        this(id, name, gender, age);
         this.java = java;
     }
 

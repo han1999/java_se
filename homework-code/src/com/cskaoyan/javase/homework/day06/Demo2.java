@@ -12,6 +12,7 @@ public class Demo2 {
         //Person2 p = new Person2(18);
         //debug语句二，进入查看nationality赋值过程
         Person2 p2 = new Person2("中国");
+        System.out.println(Person2.nationality); //中国
     }
 }
 

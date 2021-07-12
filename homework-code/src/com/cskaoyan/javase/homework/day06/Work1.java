@@ -17,7 +17,7 @@ public class Work1 {
     public static void method(int a, int b) {
         //必须依赖这个方法输出“a = 100 , b = 200”
         System.out.println("a = 100");
-        System.out.println("b = 100");
+        System.out.println("b = 200");
         //我希望在这里程序立刻终止
         //return;
         //在这里直接退出虚拟机 干掉虚拟机

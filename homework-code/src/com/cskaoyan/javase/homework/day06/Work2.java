@@ -8,7 +8,7 @@ package com.cskaoyan.javase.homework.day06;
 public class Work2 {
     public static void main(String[] args) {
         //无需创建对象 只能通过类名点方式访问方法
-
+        //ArrayTool.getArrayMaxValue()
     }
 }
 
