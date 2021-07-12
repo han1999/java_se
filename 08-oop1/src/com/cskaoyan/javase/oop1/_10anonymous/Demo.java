@@ -42,7 +42,6 @@ public class Demo {
         //匿名对象的方式传入实参
         test(new Student());
 
-
     }
 
     public static void test(Student s){
