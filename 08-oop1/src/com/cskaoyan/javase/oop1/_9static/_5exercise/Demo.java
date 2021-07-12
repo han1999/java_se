@@ -18,6 +18,9 @@ package com.cskaoyan.javase.oop1._9static._5exercise;
  *
  */
 public class Demo {
+    static {
+        System.out.println("Demo 类加载");
+    }
     static Cat cat = new Cat(); //static int a = 10;
     Dog dog = new Dog();
     Dog dog2;
@@ -34,6 +37,9 @@ public class Demo {
 
 class Cat {
     static Dog dog = new Dog(); //static3 int a = 10;
+    static {
+        System.out.println("Cat 类加载");
+    }
 
     public Cat() {
         System.out.println("cat");
@@ -41,6 +47,9 @@ class Cat {
 }
 
 class Dog {
+    static {
+        System.out.println("Dog 类加载");
+    }
     public Dog() {
         System.out.println("dog");
     }
