@@ -12,8 +12,6 @@ package com.cskaoyan.javase.oop2._1extends._8exercise;
  *      3,访问静态成员,触发该静态成员所属类的类加载
  *      4,只要触发子类的类加载,那么就会先类加载父类(不论子类是何种方式触发类加载)
  *
- *
- *
  */
 public class Demo {
     public static void main(String[] args) {
