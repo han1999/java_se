@@ -1,8 +1,9 @@
 package com.cskaoyan.javase.homework.day08.stage3.utils;
 
 
-import com.cskaoyan.javase.homework.day07.stage3.entity.Student;
-import com.cskaoyan.javase.homework.day07.stage3.entity.StudentList;
+
+import com.cskaoyan.javase.homework.day08.stage3.entity.Student;
+import com.cskaoyan.javase.homework.day08.stage3.entity.StudentList;
 
 import java.util.Scanner;
 
