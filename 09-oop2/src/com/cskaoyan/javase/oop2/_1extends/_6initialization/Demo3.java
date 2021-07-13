@@ -12,7 +12,6 @@ package com.cskaoyan.javase.oop2._1extends._6initialization;
  */
 public class Demo3 {
     public static void main(String[] args) {
-
     }
 }
 class Father{
