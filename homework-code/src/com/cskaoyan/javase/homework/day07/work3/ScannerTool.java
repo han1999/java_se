@@ -46,7 +46,7 @@ public class ScannerTool {
 
     public static Person[] getPersonArrByScanner(int length) {
 
-        /*Person[] people = new Person[3];
+        /*Person[] people = _1new Person[3];
         for (int i = 0; i < people.length; i++) {
             people[i].setAge(sc.nextInt());
             people[i].setName(sc.nextLine());
@@ -64,7 +64,7 @@ public class ScannerTool {
         return targetArr;
     }
 
-    public static void closeScanner(){
+    public static void closeScanner() {
         sc.close();
     }
 }

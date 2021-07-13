@@ -21,7 +21,7 @@ import static com.cskaoyan.javase.oop1._13import._2static.Test.打印;
  */
 public class Demo {
     public static void main(String[] args) {
-        //int[] ints = new int[3];
+        //int[] ints = _1new int[3];
         //Non-static method 'toString()' cannot be referenced from a static context
         //因为这里的toString()用的是Object类当中继承下来的普通成员方法toString()
         //System.out.println(toString(ints));

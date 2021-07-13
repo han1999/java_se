@@ -48,7 +48,7 @@ package com.cskaoyan.javase.oop1._0introduction;
  *
  *  以上,我们定义完一个类,那么这个类就是创建Student对象的模板
  *  创建对象的语法:
- *      类名 对象名 = new 类名();
+ *      类名 对象名 = _1new 类名();
  *  创建对象的位置:
  *      在权限允许的位置,可以用上述语法创建对象
  *      一般来说,我们都是在方法中创建对象,比如main方法
@@ -69,7 +69,7 @@ public class Demo2 {
     public static void main(String[] args) {
         //局部位置
         //要想使用Student类中定义的成员变量和方法,必须要创建它的对象,不能直接使用
-        //类名 对象名 = new 类名();
+        //类名 对象名 = _1new 类名();
         Student s = new Student();
         System.out.println(s.age); //0
         System.out.println(s.name); //null

@@ -30,7 +30,7 @@ package com.cskaoyan.javase.oop1._5constructor;
  *          JVM调用构造方法是为了给成员变量赋值
  *      3,我们虽然不能直接调用构造方法,但是我们可以告诉JVM使用哪个构造器去创建对象
  *          指示JVM使用构造方法的语法:
- *              new 该类类名(实参);
+ *              _1new 该类类名(实参);
  *          JVM会根据实参的数据类型去选择相应的构造方法
  *
  *      4,我们经常使用的new 类名()表示让JVM通过类的无参构造方法去创建对象.当一个类当中,没有任何构造方法提供时,默认会提供无参构造方法
@@ -69,18 +69,18 @@ package com.cskaoyan.javase.oop1._5constructor;
  */
 public class Demo {
     public static void main(String[] args) {
-        /*Teacher t1 = new Teacher();
+        /*Teacher t1 = _1new Teacher();
         t1.age = 18;
         t1.course = "Java";
 
-        Teacher t2 = new Teacher();
+        Teacher t2 = _1new Teacher();
         t2.age = 28;
         t2.course = "C++";*/
 
         //使用age单参数构造器创建对象
-        /*Teacher t1 = new Teacher(18);
+        /*Teacher t1 = _1new Teacher(18);
         System.out.println(t1.age);
-        Teacher t2 = new Teacher();*/
+        Teacher t2 = _1new Teacher();*/
 
         Teacher t = new Teacher("Java", 18);
 

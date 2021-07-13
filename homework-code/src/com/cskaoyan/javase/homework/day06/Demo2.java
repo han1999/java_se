@@ -9,7 +9,7 @@ public class Demo2 {
     public static void main(String[] args) {
         //注意不要同时放开两个new语句，避免互相影响
         //debug语句一，可以进入查看age的赋值过程
-        //Person2 p = new Person2(18);
+        //Person2 p = _1new Person2(18);
         //debug语句二，进入查看nationality赋值过程
         Person2 p2 = new Person2("中国");
         System.out.println(Person2.nationality); //中国

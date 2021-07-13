@@ -34,14 +34,14 @@ import javax.xml.transform.sax.SAXTransformerFactory;
 public class NewDemo {
     public static void main(String[] args) {
        /* //创建学生对象
-        WangDaoJavaStudent s1 = new WangDaoJavaStudent("张三");
+        WangDaoJavaStudent s1 = _1new WangDaoJavaStudent("张三");
         //Static member 'com.cskaoyan.javase.oop1._9static._0introduction.WangDaoJavaStudent.schoolName' accessed via instance reference
         //警告你: 一个静态的成员变量被对象的引用所访问了 这种方式是不推荐的
         //静态成员变量不属于对象,而属于全体对象,换句话说属于类,所以推荐使用类名点访问
         //System.out.println(s1.schoolName);
         System.out.println(WangDaoJavaStudent.schoolName);
         System.out.println(s1.schoolName);
-        WangDaoJavaStudent s2 = new WangDaoJavaStudent("马明");
+        WangDaoJavaStudent s2 = _1new WangDaoJavaStudent("马明");
         s1.schoolName = "王道Java训练营";
         System.out.println(s1.schoolName);
         System.out.println(WangDaoJavaStudent.schoolName);*/

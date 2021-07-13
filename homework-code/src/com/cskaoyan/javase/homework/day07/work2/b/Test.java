@@ -24,14 +24,13 @@ public class Test {
     public static void main(String[] args) {
         MyClazz myClazz = new MyClazz();
         myClazz.hello();
-        //com.cskaoyan.javase.oop2.homework3.work1.a.MyClazz myClazz1 = new com.cskaoyan.javase.oop2.homework3.work1.a.MyClazz();
+        //com.cskaoyan.javase.oop2.homework3.work1.a.MyClazz myClazz1 = _1new com.cskaoyan.javase.oop2.homework3.work1.a.MyClazz();
         //myClazz1.hello();
         //com.cskaoyan.javase.oop2.homework3.work1.a.MyClazz.hello();
     }
 }
 //'MyClazz' is already defined in this compilation unit
 //class MyClazz{
-//
 //    public void hello() {
 //        System.out.println("非public class MyClazz");
 //    }

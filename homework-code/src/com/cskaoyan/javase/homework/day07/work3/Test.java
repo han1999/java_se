@@ -18,5 +18,6 @@ public class Test {
         for (Person person : personArrByScanner) {
             person.print();
         }
+
     }
 }

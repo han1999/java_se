@@ -14,7 +14,7 @@ package com.cskaoyan.javase.homework.day05;
 public class CuboidDemo {
     public static void main(String[] args) {
         //创建对象
-        //Cuboid c = new Cuboid();
+        //Cuboid c = _1new Cuboid();
         //c.height = 3;
         //c.length = 4;
         //c.width = 5;

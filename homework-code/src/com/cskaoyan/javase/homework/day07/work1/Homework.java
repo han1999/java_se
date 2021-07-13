@@ -21,7 +21,7 @@ public class Homework {
         //System.out.println(s.age); //注释一
         System.out.println(Homework.s.age);
         Person p = new Person("刘备");
-        System.out.println(p.name);
+        System.out.println(p.name); //刘备
     }
 
     public Homework() {

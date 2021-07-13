@@ -57,13 +57,13 @@ package com.cskaoyan.javase.oop1._11block._2building;
  */
 public class Demo {
     public static void main(String[] args) {
-        /*Student s = new Student(38);
+        /*Student s = _1new Student(38);
         System.out.println(s.age); //38*/
 
-        /*Student s = new Student();
+        /*Student s = _1new Student();
         //System.out.println(s.age); //28
 
-        Student s2 = new Student(18);*/
+        Student s2 = _1new Student(18);*/
 
         System.out.println(Student.name);
         Student s = new Student();

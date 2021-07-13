@@ -9,7 +9,7 @@ package com.cskaoyan.javase.oop1._15access._1clazz.one;
 
 public class Demo {
     public static void main(String[] args) {
-        //new A
+        //_1new A
         //A
     }
 }

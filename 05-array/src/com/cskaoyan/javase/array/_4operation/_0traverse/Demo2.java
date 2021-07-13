@@ -32,7 +32,7 @@ public class Demo2 {
     public static void main(String[] args) {
         /*int[] arr = {1, 2, 3};
         //arr = null;
-        arr = new int[]{};
+        arr = _1new int[]{};
         System.out.println(Arrays.toString(arr));*/
 
         //快捷键: 使用for循环快速打印数组 数组名.fori

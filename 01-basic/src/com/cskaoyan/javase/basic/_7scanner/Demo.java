@@ -15,14 +15,14 @@ import java.util.Scanner;
  */
 public class Demo {
     public static void main(String[] args) {
-            /*//Scanner sc = new Scanner(System.in);
+            /*//Scanner sc = _1new Scanner(System.in);
             //快捷键: 快速补全左边的数据类型接收
             //一: .var
             //二: ctrl + alt +V
             //建议写创建对象或者使用方法的语句从右往左写
             //以后我们会经常创建对象,也会经常的去使用方法
-            Scanner sc = new Scanner(System.in);
-            //Scanner sc2 = new Scanner(System.in);
+            Scanner sc = _1new Scanner(System.in);
+            //Scanner sc2 = _1new Scanner(System.in);
             System.out.println("请输入一个int数值: ");
             int a = sc.nextInt();
             System.out.println(a);

@@ -47,7 +47,7 @@ import com.sun.org.apache.regexp.internal.RE;
  */
 public class Demo {
     public static void main(String[] args) {
-        /*Student s = new Student("张三", 0, 18);
+        /*Student s = _1new Student("张三", 0, 18);
         System.out.println(s.getName());
         s.setAge(28);
         System.out.println(s.getAge());*/

@@ -8,7 +8,7 @@ package com.cskaoyan.javase.homework.day07;
 public class UtilClassDemo {
     public static void main(String[] args) {
         //无需创建对象 只能通过类名点方式访问方法
-        //ArrayTool at = new ArrayTool(); 创建失败，没有权限
+        //ArrayTool at = _1new ArrayTool(); //创建失败，没有权限
     }
 }
 

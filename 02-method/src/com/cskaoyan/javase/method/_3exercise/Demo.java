@@ -23,7 +23,7 @@ import java.util.Scanner;
 public class Demo {
     public static void main(String[] args) {
         //测试getMaxValueByScanner方法
-        //Scanner sc = new Scanner(System.in);
+        //Scanner sc = _1new Scanner(System.in);
         //System.out.println("输入的最大值是: " + getMaxValueByScanner(sc));
 
         //测试求圆的面积

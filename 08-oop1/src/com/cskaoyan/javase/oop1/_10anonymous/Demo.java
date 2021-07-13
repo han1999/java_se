@@ -31,12 +31,12 @@ package com.cskaoyan.javase.oop1._10anonymous;
  */
 public class Demo {
     public static void main(String[] args) {
-        //Student s = new Student();
+        //Student s = _1new Student();
         //匿名对象
-        //new Student();
+        //_1new Student();
 
         //常规的传入方法的实参方式
-        //Student s = new Student();
+        //Student s = _1new Student();
         //test(s);
 
         //匿名对象的方式传入实参

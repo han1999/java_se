@@ -21,7 +21,7 @@ package com.cskaoyan.javase.oop1._7idea;
 public class Demo {
     public static void main(String[] args) {
         //创建teacher对象
-        //teacher teacher = new teacher();
+        //teacher teacher = _1new teacher();
         //Demo();
     }
 

@@ -13,7 +13,7 @@ public class Work3 {
         Scanner sc = new Scanner(System.in);
         System.out.println("请输入一个整数，范围在1-100之间：");
         //Math.random()方法获取一个0~1的小数，左闭右开[0,1)
-        //new Random()
+        //_1new Random()
         //Math.random()*100强转int舍弃小数位，表示 [0,100)的整数
         //(int) (Math.random() * 100) + 1 表示 [1,100]之间的整数
         int guessNum = (int) (Math.random() * 100) + 1;

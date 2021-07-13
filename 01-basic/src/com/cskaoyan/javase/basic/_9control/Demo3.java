@@ -57,7 +57,7 @@ public class Demo3 {
         } while (a < 0);
 
         //死循环在测试时往往用途还是有的
-        //Scanner sc = new Scanner(System.in);
+        //Scanner sc = _1new Scanner(System.in);
         //while (true){
         //    String str = sc.nextLine();
         //    System.out.println(str);
