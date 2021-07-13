@@ -1,4 +1,4 @@
-package com.cskaoyan.javase.oop2._0extends._0introduction._1new;
+package com.cskaoyan.javase.oop2._1extends._0introduction._1new;
 
 /**
  * @description: 用继承改进代码 全新版本

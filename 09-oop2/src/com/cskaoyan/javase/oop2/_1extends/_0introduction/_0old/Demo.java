@@ -1,4 +1,4 @@
-package com.cskaoyan.javase.oop2._0extends._0introduction._0old;
+package com.cskaoyan.javase.oop2._1extends._0introduction._0old;
 
 /**
  * @description: 继承的引入
