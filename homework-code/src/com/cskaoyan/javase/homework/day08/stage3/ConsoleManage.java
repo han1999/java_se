@@ -29,7 +29,6 @@ public class ConsoleManage {
         cm.start();
     }
 
-
     public void start() {
         //该标志指示循环是否继续进行,即是否仍然输出菜单
         boolean loopFlag = true;

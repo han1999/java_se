@@ -66,7 +66,6 @@ public class ScannerUtils {
         int age = Integer.parseInt(tempStringAge);
         System.out.print("请输入要录入学生的电话号码：");
         String phoneNum = sc.nextLine();
-
         //创建对象,并返回
         return new Student(stuId, name, gender, grade, age, phoneNum);
     }

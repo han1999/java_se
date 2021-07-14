@@ -85,6 +85,5 @@ public class Student {
     //打印学生信息的方法
     public void printStudent() {
         System.out.println(this.stuId + "\t\t" + this.name + "\t" + this.gender + "\t\t" + this.grade + "\t" + this.age + "\t\t\t" + this.phoneNum);
-
     }
 }
