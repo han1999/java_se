@@ -25,9 +25,6 @@ package com.cskaoyan.javase.oop3._0abstract._3exercise;
  *
  * 以上： 普通员工是不能做父类的，并且我们希望顶层父类是一个抽象类
  *
- *
- *
- *
  */
 public class Demo {
     public static void main(String[] args) {
