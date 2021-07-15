@@ -15,6 +15,7 @@ public class Test{
 class Father {
     int i = 10;
     public Father() {
+        //super()
         System.out.println(getI());
     }
     public int getI() {
@@ -25,8 +26,10 @@ class Father {
 class Son extends Father {
     int i = 100;
     public Son(int i) {
+        //super()
         this.i = i;
     }
+    @Override
     public int getI() {
         return i;
     }

@@ -24,11 +24,6 @@ package com.cskaoyan.javase.oop2._1extends._11final._3variable._0introduction;
  *          final修饰引用数据类型修饰的是它的引用，表示引用当中地址值不可变了，意味着引用所指向的对象不可变了
  *          但是引用所指向对象的成员变量的取值（对象的状态）仍然是可以改变的
  *
- *
- *
- *
- *
- *
  */
 public class Demo {
 }
