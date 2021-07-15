@@ -74,7 +74,7 @@ public class StudentList {
     //根据学号查到学生,然后键盘录入学生对象,替代它
     public boolean updateStudent(int targetStuId, Student updateStu) {
         //如果用户再次录入已存在的学号，会传入一个nullStudent对象
-        if (updateStu == null){
+        if (updateStu == null) {
             //无需赋值
             return false;
         }
@@ -96,7 +96,7 @@ public class StudentList {
     }
 
     //查找某个学生
-     public Student retrieveStudent(int targetStuId) {
+    public Student retrieveStudent(int targetStuId) {
         //先查看targetStuId是否存在
         int targetIndex = getIndex(targetStuId);
         if (targetIndex == -1) {
@@ -119,7 +119,7 @@ public class StudentList {
         //注意学生数组的有效长度是根据returnStuds来定的，所以最多只能遍历它长度的数组
         //但是又需要全部遍历整个存学生的数组，需要用嵌套for循环
         int start = 0;
-        for (int i = 0; i < returnStuds.length; i++) {
+        /*for (int i = 0; i < returnStuds.length; i++) {
             for (int j = start; j < studs.length; j++) {
                 if (studs[j] != null) {
                     returnStuds[i] = studs[j];
@@ -127,6 +127,14 @@ public class StudentList {
                     break;
                 }
             }
+        }*/
+        //简化一下以上代码
+        for (int i = 0; i < studs.length; i++) {
+            if (studs[i] == null) {
+                continue;
+            }
+            returnStuds[start] = studs[i];
+            start++;
         }
         return returnStuds;
     }
