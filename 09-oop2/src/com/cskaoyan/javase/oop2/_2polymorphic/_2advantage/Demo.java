@@ -47,8 +47,6 @@ package com.cskaoyan.javase.oop2._2polymorphic._2advantage;
  *      如果是,返回true,如果不是,返回false
  *      需要注意的是: null instanceof 任何类 返回值都是false
  *
- *
- *
  */
 public class Demo {
     public static void main(String[] args) {
@@ -62,11 +60,6 @@ public class Demo {
         instanceofTest(new CatSon());
         instanceofTest(null);
 
-        Cat c = new Cat();
-        //if (c ){
-        //
-        //}
-        System.out.println();
     }
 
     //每次研究动物叫声,都需要写一个新的方法显然太麻烦
