@@ -5,6 +5,8 @@ package com.cskaoyan.javase.homework.day10;
  * @author: wuguidong@cskaoyan.onaliyun.com
  **/
 
+import com.sun.xml.internal.ws.api.pipe.ServerTubeAssemblerContext;
+
 /**
  * 学生和老师都有共同的属性: name、gender、age
  * 共同的行为：eat() sleep()
@@ -21,9 +23,10 @@ public class Work4 {
     public static void main(String[] args) {
         IStudy is;
         is = new Student();
-        is.learningEnglish();
         is = new Teacher();
-        //is.age
+
+        Student s = new Student();
+        s.test();
     }
 }
 abstract class AbstractPerson{
@@ -48,6 +51,11 @@ class Student extends AbstractPerson implements IStudy{
     public void learningEnglish() {
         System.out.println("学习英语考研");
     }
+
+    @Override
+    public void test() {
+        System.out.println("你好中国!");
+    }
 }
 class Teacher extends AbstractPerson implements IStudy{
     @Override
@@ -67,4 +75,7 @@ class Teacher extends AbstractPerson implements IStudy{
 }
 interface IStudy{
     void learningEnglish();
+    default void test(){
+        System.out.println("hello");
+    }
 }

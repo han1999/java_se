@@ -7,7 +7,7 @@ import com.cskaoyan.javase.oop3._1interface._1basic.IDemo;
  * @author: wuguidong@cskaoyan.onaliyun.com
  **/
 
-public class IDemoImpl implements IDemo {
+public class IDemoImpl implements IDemo{
     @Override
     public void add() {
 

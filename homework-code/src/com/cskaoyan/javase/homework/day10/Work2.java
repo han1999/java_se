@@ -23,6 +23,7 @@ public class Work2 {
         SouthPerson sp = new SouthPerson();
         test(np);
         test(sp);
+        Person p = new NorthPerson();
     }
     public static void test(Person p){
         p.eat();

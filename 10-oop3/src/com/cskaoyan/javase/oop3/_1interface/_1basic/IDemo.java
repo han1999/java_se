@@ -12,9 +12,45 @@ package com.cskaoyan.javase.oop3._1interface._1basic;
  *
  */
 public interface IDemo {
+
+    public static void main(String[] args) {
+        A a = new A();
+        a.test3();
+        System.out.println("hello world");
+    }
     void add();
 
     int delete();
 
     boolean retrieve();
+
+    default void test(){
+        System.out.println("IDemo");
+    }
+}
+interface IB{
+    default void test3(){
+        System.out.println("IB");
+    }
+}
+interface IC{
+    default void test2(){
+        System.out.println("IC");
+    }
+}
+//com.cskaoyan.javase.oop3._1interface._1basic.A inherits unrelated defaults for test() from types com.cskaoyan.javase.oop3._1interface._1basic.IDemo and com.cskaoyan.javase.oop3._1interface._1basic.IB
+class A implements IDemo,IC,IB{
+    @Override
+    public void add() {
+    }
+
+    @Override
+    public int delete() {
+        return 0;
+    }
+
+    @Override
+    public boolean retrieve() {
+        return false;
+    }
 }
