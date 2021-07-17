@@ -76,6 +76,7 @@ public class Work3 {
             public int divide(int a, int b) {
                 return a / b;
             }
+
         };
         System.out.println(ic.add(1, 2));
         System.out.println(ic.subtract(2, 1));
