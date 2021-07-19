@@ -54,9 +54,11 @@ package com.cskaoyan.javase.object._6clone;
  *      Object类当中的clone方法的默认实现就是浅克隆的
  *
  *      深克隆: 浅克隆得到的两个对象不是完全独立的,所以需要进行深克隆,得到两个完全真正独立的对象
- *
- *
- *
+ *          深度克隆的流程:
+ *          1,深度克隆是在浅克隆的基础上进行的,浅克隆仍然是有必要的
+ *          2,把该类成员变量引用所指向的对象克隆一份
+ *          3,把克隆后该成员变量引用指向克隆后的对象
+ *          4,以上完成深度克隆
  *
  */
 public class Demo {
@@ -138,13 +140,21 @@ class Student implements Cloneable{
     @Override
     protected Student clone() throws CloneNotSupportedException {
         //父类方法返回值是Object对象,需要强转它
-        return ((Student) super.clone());
+        //return ((Student) super.clone());
+        //1,深度克隆是在浅克隆基础上完成的,所以仍然需要调用父类Object类当中的clone方法
+        Student cloneStu = (Student) super.clone();
+        //2,克隆一份Cat对象
+        //c.clone()和cloneStu.c.clone()是一样的
+        Cat cloneCat = cloneStu.c.clone();
+        //3,把克隆后的引用指向克隆后的Cat对象
+        cloneStu.c = cloneCat;
+        return cloneStu;
     }
 }
 interface My extends MyCloneable{}
 interface MyCloneable extends Cloneable{
 }
-class Cat{
+class Cat implements Cloneable{
     double price;
 
     public Cat() {
@@ -154,10 +164,8 @@ class Cat{
         this.price = price;
     }
 
-    /*@Override
-    public String toString() {
-        return "Cat{" +
-                "price=" + price +
-                '}';
-    }*/
+    @Override
+    protected Cat clone() throws CloneNotSupportedException {
+        return ((Cat) super.clone());
+    }
 }
