@@ -29,9 +29,6 @@ package com.cskaoyan.javase.object._5finalize;
  *          这个想法是很好的,但是却实现不了,java当中的对象销毁依赖于GC不是手动的,依赖finalize方法释放系统资源是不稳定的,不准时,没有时效性
  *          java因为GC的自动垃圾回收,程序员获得了释放对象资源的便利性,但是也失去了对系统资源释放的便利性
  *
- *
- *
- *
  */
 public class Demo {
     public static void main(String[] args) {
