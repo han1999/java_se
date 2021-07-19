@@ -43,4 +43,5 @@ class Student{
     protected void finalize() throws Throwable {
         System.out.println("模拟释放资源的语句");
     }
+
 }
