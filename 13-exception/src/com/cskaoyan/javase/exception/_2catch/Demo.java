@@ -1,7 +1,7 @@
 package com.cskaoyan.javase.exception._2catch;
 
 /**
- * @description: 捕获异常,自己处理
+ * @description: 捕获异常, 自己处理
  * @author: wuguidong@cskaoyan.onaliyun.com
  **/
 
@@ -30,21 +30,39 @@ package com.cskaoyan.javase.exception._2catch;
  *          不是必须完全一样,1,可以是同种类型对象,2,也可以是子类对象
  *          但是我们最好根据不同的异常,做不同的处理,尽量不要在catch当中写一个大而宽泛的父类异常
  *
+ *      2，try代码块当中会产生几个异常？
+ *          try代码块当中运行到会产生异常的代码行,后面的代码都不会继续运行了
+ *          所以try当中无论可能产生多少个异常,最终都只可能产生一个异常
  *
- *
- *
+ *      3,我们在一个catch分支当中,可以同时处理多个异常
+ *          语法:
+ *          catch(要捕捉的异常类型1 | 要捕捉的异常对类型2 | 要捕捉的异常类型3 对象名...){
+ *          }
+ *          注意: 每个分隔符"|"之间写的都是异常的类型,最后才需要写一个对象名
+ *                "|"不是逻辑运算符或,更不能用短路的
+ * 注意事项:
+ *      - try...catch会显著的影响代码结构，严重影响代码可读性
+ *   - 所以应该把尽量少的代码放入try中，最好是产生异常的那一行代码
+ * - 如果catch不能匹配异常对象，那么不会执行catch代码块中的内容
+ * - 只有当try代码块中产生了异常，catch才有机会执行，没有异常不执行，不匹配也不执行
+ * - 当实在不清楚异常的种类时，可以使用Exception接收（但实际上这是偷懒程序员的借口）
+ * - **try代码块中某个位置产生了异常，那么try中的代码就不继续执行了**
+ *   - 也就是说try当中要么不产生异常，要么**只会产生一个异常**
  *
  */
 public class Demo {
     public static void main(String[] args) {
         System.out.println("before");
+        int[] arr;
         try {
             //System.out.println(10/0);
-            int[] arr;
+            //System.out.println("try after");
             arr = null;
-            System.out.println(arr.length);
-        }catch (Throwable e){
-            System.out.println("try代码块中发生了算术异常,被我逮住了");
+            //System.out.println(arr.length);
+            arr = new int[3];
+            //System.out.println(arr[3]);
+        } catch (ArithmeticException | NullPointerException | ArrayIndexOutOfBoundsException e) {
+            System.out.println("try代码块中发生了异常,被我逮住了");
         }
         System.out.println("after");
     }
