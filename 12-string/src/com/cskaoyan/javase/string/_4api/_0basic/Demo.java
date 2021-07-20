@@ -1,4 +1,4 @@
-package com.cskaoyan.javase.string._4api;
+package com.cskaoyan.javase.string._4api._0basic;
 
 /**
  * @description: 常用API的使用

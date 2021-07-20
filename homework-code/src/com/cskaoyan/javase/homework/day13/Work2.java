@@ -22,6 +22,10 @@ public class Work2 {
         //Test
         Teacher t = new Teacher(18, "马云", new Student(10, "马化腾", new Star(99, "张三")));
         Teacher cloneTeacher = (Teacher) t.clone();
+        //System.out.println(t == cloneTeacher);
+        //System.out.println(t);
+        //System.out.println(cloneTeacher);
+
         System.out.println(cloneTeacher);
         System.out.println(t);
         System.out.println("-----------------------");
@@ -33,6 +37,8 @@ public class Work2 {
         cloneTeacher.name = "新垣结衣";
         System.out.println(cloneTeacher.name);
         System.out.println(t.name);
+
+
     }
 }
 
@@ -57,7 +63,28 @@ class Teacher implements Cloneable {
         //把克隆教师对象中的s引用指向克隆的stu副本
         cloneTeacher.s = cloneStu;
         return cloneTeacher;
+        //return super.clone();
     }
+
+    //@Override
+    //public boolean equals(Object o) {
+    //    if (this == o) return true;
+    //    if (o == null || getClass() != o.getClass()) return false;
+    //
+    //    Teacher teacher = (Teacher) o;
+    //
+    //    if (age != teacher.age) return false;
+    //    if (name != null ? !name.equals(teacher.name) : teacher.name != null) return false;
+    //    return s != null ? s.equals(teacher.s) : teacher.s == null;
+    //}
+
+    //@Override
+    //public int hashCode() {
+    //    int result = age;
+    //    result = 31 * result + (name != null ? name.hashCode() : 0);
+    //    result = 31 * result + (s != null ? s.hashCode() : 0);
+    //    return result;
+    //}
 }
 
 class Student implements Cloneable {
