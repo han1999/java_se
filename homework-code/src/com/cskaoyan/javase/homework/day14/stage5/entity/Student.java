@@ -8,7 +8,6 @@ package com.cskaoyan.javase.homework.day14.stage5.entity;
 /**
  * 分包，分功能，代码应该写在哪里？
  *
- *
  */
 public class Student {
     private int stuId; //学号
