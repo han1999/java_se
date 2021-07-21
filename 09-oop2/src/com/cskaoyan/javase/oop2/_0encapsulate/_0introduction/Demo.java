@@ -5,7 +5,7 @@ package com.cskaoyan.javase.oop2._0encapsulate._0introduction;
  * @author: wuguidong@cskaoyan.onaliyun.com
  **/
 
-import com.sun.org.apache.regexp.internal.RE;
+
 
 /**
  * 所谓封装即是，隐藏对象中属性和一些实现细节，仅对外提供公共的访问方法
