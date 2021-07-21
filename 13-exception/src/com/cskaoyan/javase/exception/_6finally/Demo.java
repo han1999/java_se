@@ -28,16 +28,18 @@ package com.cskaoyan.javase.exception._6finally;
  * - 如果try中的异常不能正常捕获,但是finally中有return
  *   - **注意此时程序会跳过这个异常，不会抛出异常给JVM报错**
  * - try中的return语句return的是一个方法，但是这个方法又产生了异常
- *   - 自己测试一下吧哈哈
+ *   - 自己测试一下
  *
+ * 如果真的想让finally不执行，也不是没有办法的，直接退出虚拟机即可
  *
  */
 public class Demo {
     public static void main(String[] args) {
-        /*int[] arr = null;
+        int[] arr = null;
         System.out.println("try之前");
         try {
             //System.out.println(10/0);
+            //System.exit(0);
             System.out.println(arr.length);
             //System.out.println(10 / 10);
             //return;
@@ -48,10 +50,10 @@ public class Demo {
             System.out.println("finally代码块执行了!");
             return;
         }
-        //System.out.println("finally之后代码");*/
+        //System.out.println("finally之后代码");
 
 
-        StackOverflowError se = new StackOverflowError();
+        /*StackOverflowError se = new StackOverflowError();
         try {
             throw se;
         } catch (Exception error) {
@@ -59,6 +61,6 @@ public class Demo {
         }finally {
             System.out.println("hello world");
             return;
-        }
+        }*/
     }
 }
