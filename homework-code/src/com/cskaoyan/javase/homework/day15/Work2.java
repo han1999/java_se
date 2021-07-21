@@ -5,13 +5,15 @@ package com.cskaoyan.javase.homework.day15;
  * @author: wuguidong@cskaoyan.onaliyun.com
  **/
 
+import java.io.IOException;
+
 /**
  *2，分别自定义编译时异常和运行时异常，并在方法中抛出异常，main方法中调用该方法，并处理相应的异常
  *
  */
 public class Work2 {
     public static void main(String[] args) {
-        try {
+        /*try {
             testThrowRuntimeException();
         } catch (MyRuntimeException e) {
             e.printStackTrace();
@@ -24,6 +26,12 @@ public class Work2 {
         } catch (MyException e) {
             e.printStackTrace();
             System.out.println("模拟处理");
+        }*/
+
+        try {
+            test();
+        } catch (IOException b) {
+            b.printStackTrace();
         }
 
     }
@@ -34,6 +42,11 @@ public class Work2 {
 
     public static void testThrowException() throws MyException {
         throw new MyException("自定义的编译时异常");
+    }
+
+
+    public static void test() throws B {
+        throw new B();
     }
 }
 
@@ -47,6 +60,7 @@ class MyException extends Exception {
     }
 }
 
+
 //自定义运行时异常
 class MyRuntimeException extends RuntimeException {
     public MyRuntimeException() {
@@ -55,4 +69,22 @@ class MyRuntimeException extends RuntimeException {
     public MyRuntimeException(String message) {
         super(message);
     }
+}
+
+class A extends NullPointerException{
+    public A() {
+    }
+    public A(String s) {
+        super(s);
+    }
+}
+
+class B extends IOException{
+    public B() {
+    }
+
+    public B(String message) {
+        super(message);
+    }
+
 }

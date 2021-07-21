@@ -18,7 +18,6 @@ public class Work3 {
     public static boolean deleteDirectory(File target) {
         //获取目标目录下的所有文件的file对象
         File[] files = target.listFiles();
-
         if (files == null || files.length == 0) {
             //如果传入的target对象是一个文件或者是一个空目录，直接删除
             return target.delete();

@@ -17,6 +17,11 @@ import java.io.File;
 public class Work4 {
     public static void main(String[] args) {
         //具体自己实现，可以选择匿名内部类，lambda表达式都行
+        File f = new File("E:\\2");
+        File[] files = f.listFiles(Work4::condition2);
+        for (File file : files) {
+            System.out.println(file);
+        }
     }
 
     public static boolean condition1(File file) {
