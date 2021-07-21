@@ -23,7 +23,6 @@ public class Work4 {
             System.out.println(file);
         }
     }
-
     public static boolean condition1(File file) {
         return file.isDirectory() && file.getName().contains("a");
     }
