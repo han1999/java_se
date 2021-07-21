@@ -11,17 +11,12 @@ public class Work1 {
     public static void main(String[] args) {
         System.out.println(ScannerUtils.getInt());
     }
-
-
 }
 
 class ScannerUtils {
     private static final Scanner SCANNER = new Scanner(System.in);
-
     public static int getInt() {
-
         System.out.println("请键盘输入一个int数字：");
-
         int num;
         while (true) {
             String numStr = SCANNER.nextLine();
@@ -34,7 +29,5 @@ class ScannerUtils {
             break;
         }
         return num;
-
-
     }
 }
