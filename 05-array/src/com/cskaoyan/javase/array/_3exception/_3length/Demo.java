@@ -21,7 +21,7 @@ public class Demo {
 
         System.out.println(arr);
         System.out.println(arr2);
-        //System.out.println(arr3);
+//        System.out.println(arr3);
     }
 
     //长度为0的数组的使用场景

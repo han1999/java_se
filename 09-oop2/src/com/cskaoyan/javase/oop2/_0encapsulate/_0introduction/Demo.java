@@ -39,6 +39,8 @@ package com.cskaoyan.javase.oop2._0encapsulate._0introduction;
  *
  * 注意事项:
  *      - 静态成员变量，基本和普通成员变量没有区别，但是要注意get、set方法也要是静态的
+ *      //hx： 其实呢， 按照普通方法定义也行， 但是不符合逻辑， 语法上是没问题的， 而且idea自动生成的
+ *      默认给静态成员变量的getter， setter方法都是public static修饰的。
  *
  * - 封装成员变量后，给成员变量赋值的方式改变了，我们今后基本只有这种方式了
  *   - 无参构造方法创建对象后，set方法逐一赋值
@@ -53,6 +55,8 @@ public class Demo {
         System.out.println(s.getAge());*/
         Student s = new Student();
         s.setAge(24);
+//        s.setA("bg");
+//        System.out.println("s.getA() = " + s.getA());
         System.out.println(s.getAge());
     }
 }
@@ -63,8 +67,12 @@ class Student {
     private int age;
     private static String a;
 
-    public static String  getA(){
-        return Student.a;
+    public static String getA() {
+        return a;
+    }
+
+    public static void setA(String a) {
+        Student.a = a;
     }
 
     //提供name的访问方法

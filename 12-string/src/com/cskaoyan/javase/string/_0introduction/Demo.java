@@ -26,6 +26,7 @@ public class Demo {
         ////创建空字符串对象，需要注意的是null != ""
         //public String()
         String s = new String();
+        System.out.println("s.equals(\"\") = " + s.equals(""));
         System.out.println(s);
         System.out.println(s.length());
 

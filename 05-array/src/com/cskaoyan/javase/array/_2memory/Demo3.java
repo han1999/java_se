@@ -18,6 +18,9 @@ public class Demo3 {
 
         char[] arr4 = new char[3];
         System.out.println(arr4[0]);
+        if (arr4[0]=='\u0000') System.out.println("这就是传说中的空字符！");
+        System.out.println("\054");
+        System.out.println("\54");
         System.out.println("hello");
 
         boolean[] arr5 = new boolean[3];
@@ -25,7 +28,5 @@ public class Demo3 {
 
         String[] arr6 = new String[3];
         System.out.println(arr6[0]);
-
-
     }
 }

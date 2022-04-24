@@ -11,11 +11,10 @@ package com.cskaoyan.javase.array._4operation._3retrieve;
  * R: retrieve,搜索,检索
  * U: update,更新
  * D: delete,删除
- *
- *
+ * <p>
+ * <p>
  * 数组元素的查找规则:
- *      查找数组中某个元素,如果查找到了,返回它的下标,如果没找到,返回-1
- *
+ * 查找数组中某个元素,如果查找到了,返回它的下标,如果没找到,返回-1
  */
 public class Demo {
     public static void main(String[] args) {

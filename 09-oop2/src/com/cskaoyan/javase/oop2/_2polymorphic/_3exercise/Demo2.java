@@ -1,7 +1,7 @@
 package com.cskaoyan.javase.oop2._2polymorphic._3exercise;
 
 /**
- * @description: 小练习
+ * @description: 小练习  好家伙 这道题真tm难
  * @author: wuguidong@cskaoyan.onaliyun.com
  **/
 
@@ -15,7 +15,7 @@ public class Demo2 {
         System.out.println("1--" + a1.show(b)); //AA
         System.out.println("2--" + a1.show(c)); //AA
         System.out.println("3--" + a1.show(d)); //AD
-        System.out.println("4--" + a2.show(b)); //BA
+        System.out.println("4--" + a2.show(b)); //BA  //只能找到重写的那个方法
         System.out.println("5--" + a2.show(c)); //BA
         System.out.println("6--" + a2.show(d)); //AD
         System.out.println("7--" + b.show(b)); //BB

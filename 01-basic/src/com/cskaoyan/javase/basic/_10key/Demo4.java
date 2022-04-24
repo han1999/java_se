@@ -20,7 +20,7 @@ package com.cskaoyan.javase.basic._10key;
  */
 public class Demo4 {
     public static void main(String[] args) {
-        /*for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) {
             if (i == 3) {
                 return;
                 //break;
@@ -30,7 +30,7 @@ public class Demo4 {
             System.out.println("你好我的世界!");
             return;
         }
-        System.out.println("666");*/
+        System.out.println("666");
 
         //怎么让不确定的for循环.if判断变成编译器能够认可的绝对执行呢??
         //循环需要是死循环

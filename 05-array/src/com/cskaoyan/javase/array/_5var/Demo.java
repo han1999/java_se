@@ -72,14 +72,14 @@ public class Demo {
         return sumValue;
     }
 
-//    public static int sum(int value, int... arr) {
-//        int sumValue = 0;
-////遍历数组,求和
-//        for (int a : arr) {
-//            sumValue += a;
-//        }
-//        return sumValue;
-//    }
+    public static int sum(int value, int... arr) {
+        int sumValue = 0;
+//遍历数组,求和
+        for (int a : arr) {
+            sumValue += a;
+        }
+        return sumValue;
+    }
 
     public static int sum(int a , int b){
         return 1;

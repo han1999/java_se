@@ -20,10 +20,10 @@ public class Demo {
         System.out.println(s.c); //10000
         System.out.println(s.aa); //20
         System.out.println("----------------");
-        /*if (f instanceof Son){
+        if (f instanceof Son){
             //Cast may be removed by changing the type of 'f' to 'Son'
             ((Son) f).testSon();
-        }*/
+        }
         //f.testSon(); //父类中没有该方法
         f.test();  //Son
         f.testFather(); //Only Father

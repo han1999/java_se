@@ -45,6 +45,10 @@ public class Demo2 {
         Phone p8 = new Phone(300, 3000, "华为");
         Phone[] arr = {p, p1, p2, p3, p4, p5, p6, p7, p8};
         System.out.println("排序前: " + Arrays.toString(arr));
+        Integer[] ints={1,3,5,9,4};
+        System.out.println("Arrays.toString(ints) = " + Arrays.toString(ints));
+        Arrays.sort(ints, (o1, o2)-> o2-o1);
+        System.out.println("Arrays.toString(ints) = " + Arrays.toString(ints));
         //Arrays.sort(arr, new MyRuler());
         /*
         匿名内部类:
@@ -56,7 +60,7 @@ public class Demo2 {
             }
         });*/
         //lambda表达式, 比较规则: 牌子越长,越厉害,牌子越长,排在前面
-        //Arrays.sort(arr, (o1, o2) -> o2.brand.length() - o1.brand.length());
+//        Arrays.sort(arr, (o1, o2) -> o2.brand.length() - o1.brand.length());
 
         //Arrays.sort(arr,(o1,o2) -> myCompare(o1, o2));
         Arrays.sort(arr, Demo2::myCompare);

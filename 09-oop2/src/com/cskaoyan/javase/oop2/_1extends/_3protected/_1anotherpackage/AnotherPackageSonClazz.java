@@ -47,6 +47,7 @@ public class AnotherPackageSonClazz extends CurrentClazz {
 
         //方式四: 父类引用指向子类对象
         CurrentClazz cc2 = new AnotherPackageSonClazz();
-        //cc2.protectedVarMember
+//        cc2.protectedVarMember
+//        System.out.println("cc2.protectedVarMember = " + cc2.protectedVarMember);
     }
 }

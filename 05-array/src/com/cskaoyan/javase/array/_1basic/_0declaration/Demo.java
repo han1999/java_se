@@ -28,6 +28,6 @@ public class Demo {
         double arr2[];
 
         //只有声明的数组是不可用,必须初始化它,才能使用
-        //System.out.println(arr);
+//        System.out.println(arr);
     }
 }

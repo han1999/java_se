@@ -6,7 +6,7 @@ package com.cskaoyan.javase.junit._0basic;
  **/
 
 import org.junit.Test;
-
+//Test
 /**
  * 利用Junit单元测试可以在一个类中实现多个main方法的效果
  * 在JavaSE阶段,可以用junit单元测试做一些简单的测试和实验

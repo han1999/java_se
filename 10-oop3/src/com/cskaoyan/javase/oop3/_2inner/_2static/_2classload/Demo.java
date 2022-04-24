@@ -13,13 +13,15 @@ public class Demo {
 
 
 }
-class Enclosed{
+
+class Enclosed {
     static {
         System.out.println("Enclosed类类加载了!");
     }
 
     static class Inner {
         static int a = 10;
+
         static {
             System.out.println("Inner类加载了");
         }

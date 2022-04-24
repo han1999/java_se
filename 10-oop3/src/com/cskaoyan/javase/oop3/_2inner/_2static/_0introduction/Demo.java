@@ -5,7 +5,10 @@ package com.cskaoyan.javase.oop3._2inner._2static._0introduction;
  * @author: wuguidong@cskaoyan.onaliyun.com
  **/
 
+import com.cskaoyan.javase.oop1._13import._2static.Test;
+
 import javax.print.attribute.standard.PrinterURI;
+import java.time.format.TextStyle;
 
 /**
  *
@@ -53,11 +56,15 @@ import javax.print.attribute.standard.PrinterURI;
  *
  */
 public class Demo {
+    public static void main(String[] args) {
+        new EncloseClazz.StaticClazz().test1();
+        new EncloseClazz.StaticClazz().showB();
+    }
 }
 class EncloseClazz{
 
     //定义静态内部类
-    private static class StaticClazz implements IA{
+    public static class StaticClazz extends B implements IA{
         int a = 10;
         private static int b = 20;
         static final String C = new String("str");
@@ -74,9 +81,22 @@ class EncloseClazz{
         public StaticClazz(int a) {
             this.a = a;
         }
+
+        @Override
+        public void test1() {
+            System.out.println("实现外部接口的方法tes1");
+        }
     }
     static class A{}
     //Modifier 'static' is redundant for inner interfaces
-    static interface IA{}
+//    static interface IA{}
+}
+class B{
+    public void showB(){
+        System.out.println("B类的showB方法");
+    }
+}
+interface IA{
+    void test1();
 }
 //static interface IA{}

@@ -15,7 +15,6 @@ package com.cskaoyan.javase.oop1._9static._5exercise;
  *
  * 所以类加载在进行到初始化静态变量之前,该类已经能够创建对象
  *
- *
  */
 public class Demo {
     static {

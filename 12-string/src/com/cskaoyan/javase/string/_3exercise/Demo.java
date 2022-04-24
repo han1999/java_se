@@ -31,5 +31,8 @@ public class Demo {
 
         System.out.println(s3 == ("hello" + "world")); //true
         System.out.println(s3.equals("hello" + "world")); //true
+
+        System.out.println( "helloworld" == "hello" + "world");
+        System.out.println("afsdfa");
     }
 }

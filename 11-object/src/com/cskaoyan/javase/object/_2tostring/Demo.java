@@ -38,6 +38,7 @@ package com.cskaoyan.javase.object._2tostring;
  *      5,
  *      思考: 当对象参与字符串运算时,会自动调用toString方法,那么写与不写出该方法调用,哪个更合适呢??
  *      不要画蛇添足,自动调用toString方法可以避免空指针异常,如果你写上方法调用,就避免不了这个问题了
+ *      //厉害呀！！！
  *
  */
 public class Demo {

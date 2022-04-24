@@ -60,6 +60,5 @@ public class Demo {
         Demo d = new Demo();
         //Unhandled exception: java.lang.CloneNotSupportedException
         d.clone();
-
     }
 }

@@ -96,11 +96,11 @@ interface IB {
 @FunctionalInterface
 interface IA {
     void test();
-    /*//默认方法
+    //默认方法
     default void method(){}
     //静态方法
     static void method2(){
     }
     //equals方法
-    boolean equals(Object o);*/
+    boolean equals(Object o);
 }

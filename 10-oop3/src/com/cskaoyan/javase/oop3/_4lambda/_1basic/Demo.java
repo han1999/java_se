@@ -43,9 +43,6 @@ package com.cskaoyan.javase.oop3._4lambda._1basic;
  *              静态方法属于类
  *
  * 以上就是lambda表达式简化的核心点
- *
- *
- *
  */
 public class Demo {
     public static void main(String[] args) {

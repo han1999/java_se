@@ -20,17 +20,17 @@ package com.cskaoyan.javase.exception._7myexception;
  */
 public class Demo {
     public static void main(String[] args) {
-        /*try {
+        try {
             judgeObjectNum(10);
         } catch (Exception e) {
             e.printStackTrace();
-        }*/
+        }
 
-        try {
+  /*      try {
             judgeObjectNumChecked(-1);
         } catch (ObjectNumException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
     public static void judgeObjectNum(int num) {

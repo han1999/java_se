@@ -17,12 +17,15 @@ package com.cskaoyan.javase.stringbuffer._0introduction;
  */
 public class Demo {
     public static void main(String[] args) {
-        //String s = "";
+        String s = "";
         StringBuffer sb = new StringBuffer();
-        for (int i = 0; i < 1000000; i++) {
-            //s += "你好";
-            sb.append("你好");
+        long startTime = System.currentTimeMillis(); //获取开始时间
+        for (int i = 0; i < 100000; i++) {
+            s += "你好";
+//            sb.append("你好");
+//            System.out.println("s"+i +"="+s);
         }
-        System.out.println(sb);
+        long endTime = System.currentTimeMillis(); //获取结束时间
+        System.out.println("程序运行时间：" + (endTime - startTime) + "ms");
     }
 }

@@ -31,7 +31,7 @@ package com.cskaoyan.javase.oop3._2inner._3local._0introduction;
  *      也没有static,不能用static修饰局部内部类
  *
  * > 2，成员特点
- *      和成员内部类相似,没有static声明,包括静态变量和静态方法以及静态代码块
+ *      和成员内部类相似,没有static声明,包括静态变量和静态方法以及静态代码块 //只有创建对象的时候才进行类加载
  *      但是可以有static final常量(指那些不会触发完整类加载的全局常量)
  *
  * > 3，定义位置

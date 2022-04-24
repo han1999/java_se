@@ -1,5 +1,7 @@
 package com.cskaoyan.javase.recursion._1basic._1deeptest;
 
+import sun.util.resources.ga.LocaleNames_ga;
+
 /**
  * @description: 测试递归深度
  * @author: wuguidong@cskaoyan.onaliyun.com
@@ -11,7 +13,7 @@ public class Demo {
     }
 
     //这是一个异常处理的代码try...catch
-    public static int sum(int a) {
+    public static long sum(long a) {
         //int b = 1000;
         try {
             //try代码块当中存放那些可能会产生异常的代码

@@ -13,9 +13,9 @@ public class Demo5 {
             if (i == 3) {
                 System.out.println("我喜欢学习Java!");
                 //填入
-                //break;
-                //continue;
-                return;
+//                break;
+                continue;
+//                return;
             }
             System.out.println(i);
         }

@@ -55,8 +55,8 @@ class FirstLevel implements Cloneable {
     @Override
     protected FirstLevel clone() throws CloneNotSupportedException {
         FirstLevel cloneFirst = (FirstLevel) super.clone();
-        SecondLevel cloneSecond = cloneFirst.second.clone();
-        cloneFirst.second = cloneSecond;
+//        SecondLevel cloneSecond = cloneFirst.second.clone();
+        cloneFirst.second = cloneFirst.second.clone();
         return cloneFirst;
     }
 }

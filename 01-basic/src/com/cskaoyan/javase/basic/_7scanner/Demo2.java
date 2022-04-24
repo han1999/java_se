@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Demo2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        /*System.out.println("请输入int数值：");
+    /*    System.out.println("请输入int数值：");
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();

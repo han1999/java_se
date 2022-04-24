@@ -21,17 +21,17 @@ package com.cskaoyan.javase.oop1._7idea;
 public class Demo {
     public static void main(String[] args) {
         //创建teacher对象
-        //teacher teacher = _1new teacher();
-        //Demo();
+        teacher teacher = new teacher();
+        Demo();
     }
 
     //Method name 'Demo' is the same as its class name
-    //public static void Demo(){
-    //}
+    public static void Demo(){
+    }
 }
 
 //为什么一直强调类名应该大驼峰书写?
-//class teacher{
-//    public teacher() {
-//    }
-//}
+class teacher{
+    public teacher() {
+    }
+}

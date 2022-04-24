@@ -21,11 +21,11 @@ import java.util.Scanner;
  */
 public class Demo {
     public static void main(String[] args) {
-        /*Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("请输入一行字符串: ");
         String s = sc.nextLine();
         testStringNotVar(s);
-        System.out.println(s);*/
+        System.out.println(s);
 
 
         /*Student s2 = new Student();
@@ -34,14 +34,15 @@ public class Demo {
         System.out.println(s2.age);*/
 
 
-        String s = "hello";
+    /*    String s = "hello";
         s += "world";
-        System.out.println(s);
+        System.out.println(s);*/
     }
 
     //方法可以改变对象的状态,所以正常情况下,字符串的内容是可以修改成功的
     public static void testStringNotVar(String s) {
         s = s + "的弟弟";
+        System.out.println(s);
     }
 
     public static void test(Student s) {

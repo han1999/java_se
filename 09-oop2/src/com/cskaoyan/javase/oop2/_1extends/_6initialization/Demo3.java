@@ -27,7 +27,7 @@ class Father{
 }
 //There is no default constructor available in 'com.cskaoyan.javase.oop2._1extends._6initialization.Father'
 class Son extends Father{
-    //public Son(int a) {
-    //    super(a);
-    //}
+    public Son(int a) {
+        super(a);
+    }
 }

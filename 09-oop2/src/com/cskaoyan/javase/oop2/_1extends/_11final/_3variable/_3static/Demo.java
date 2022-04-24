@@ -28,6 +28,7 @@ class Student {
         System.out.println("Student");
     }
     static final int NUM = 100;
+    static int num2=200;
 
     //public Student(int NUM){
     //    Student.NUM = NUM;
@@ -35,4 +36,7 @@ class Student {
     //public static void test(){
     //    NUM = 10;
     //}
+}
+class  A extends Student{
+
 }

@@ -5,6 +5,8 @@ package com.cskaoyan.javase.oop2._1extends._11final._3variable._1local;
  * @author: wuguidong@cskaoyan.onaliyun.com
  **/
 
+import com.sun.org.apache.xpath.internal.operations.Variable;
+
 /**
  * 局部位置有很多,比如方法中,代码块中,这里我们以方法为例学习局部的final常量
  * 方法的局部位置有两个:
@@ -23,10 +25,10 @@ public class Demo {
     }
 
     public static void test(final int A){
-        //final int A = 10;
-        //Variable 'a' might already have been assigned to
-        //a = 100;
-        //A = 100;
+//        final int A = 10;
+//        Variable 'a' might already have been assigned to
+//        a = 100;
+//        A = 100;
         System.out.println(A + 1);
     }
 }

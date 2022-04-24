@@ -10,7 +10,7 @@ import java.io.FileFilter;
 
 public class Demo3 {
     public static void main(String[] args) {
-        File f = new File("E:\\2");
+        File f = new File("C:\\test");
         //File[] files = f.listFiles(new MyFilter());
 
         //使用匿名内部类
@@ -34,6 +34,7 @@ public class Demo3 {
     public static boolean myFilterRuler(File f){
         if (f.isFile() && f.getName().endsWith(".mp4")) return true;
         if (f.isFile() && f.getName().endsWith(".mp3")) return true;
+        System.out.println(f.getName());
         if (f.getName().length() > 4) return true;
         return false;
     }

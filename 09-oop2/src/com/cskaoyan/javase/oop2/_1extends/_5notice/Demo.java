@@ -36,7 +36,7 @@ public class Demo {
         System.out.println(s.getPrivateVar());
         System.out.println(Son.a);
         //System.out.println(s.a);
-        Son.a = 100;
+        Son.a = 1000;
         System.out.println(Father.a);
     }
 }
